@@ -1,4 +1,5 @@
 #!/bin/bash 
+# https://github.com/entonbiba/ovh-public-cloud-additional-drive-bash-script
 # ovh additional drive mount and partition
 sudo lsblk
 # create a partition
