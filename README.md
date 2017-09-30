@@ -23,6 +23,7 @@ For example if it's a high performance disk, the first additional drive will be 
 ### Step 2:
 - Download the bash script from this repository to the public cloud server
 - Make the bash script executable
+
 #### Classic Disk
 ```Bash
 cd /
@@ -39,6 +40,7 @@ chmod +x ovh_adpc_highperformance_disk.sh
 
 ### Step 3:
 - Run the script
+
 #### Classic Disk
 ```Bash
 sudo bash ovh_adpc_classic_disk.sh
