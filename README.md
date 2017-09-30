@@ -6,7 +6,11 @@ We will be using an Ubuntu 16.04 OS Image and will have already installed "wget"
 ```Bash
 sudo apt-get update sudo apt-get install wget
 ```
-The third character of the drive name will alpha increment. For example, the first additional drive will be called "vdb", the second "vdc", the third "vdd" and so on. 
+There are two types of additional disks that can be mounted on OVH Public Cloud servers.
+- <a href="ovh_adpc_classic_disk.sh">Classic disk (starts with the letter s)</a>
+- <a href="ovh_adpc_highperformance_disk.sh">High Performance disk (starts with the letter v)</a>
+The third character of the drive name will alpha increment.<br/>
+For example if it's a high performance disk, the first additional drive will be called "vdb", the second "vdc", the third "vdd" and so on. 
 
 
 
@@ -19,16 +23,30 @@ The third character of the drive name will alpha increment. For example, the fir
 ### Step 2:
 - Download the bash script from this repository to the public cloud server
 - Make the bash script executable
+#### Classic Disk
 ```Bash
 cd /
-sudo wget https://raw.githubusercontent.com/entonbiba/ovh-public-cloud-additional-drive-bash-script/master/ovh_adpc.sh
-chmod +x ovh_adpc.sh
+sudo wget https://raw.githubusercontent.com/entonbiba/ovh-public-cloud-additional-drive-bash-script/master/ovh_adpc_classic_disk.sh
+chmod +x ovh_adpc_classic_disk.sh
+```
+
+#### High Performance Disk
+```Bash
+cd /
+sudo wget https://raw.githubusercontent.com/entonbiba/ovh-public-cloud-additional-drive-bash-script/master/ovh_adpc_highperformance_disk.sh
+chmod +x ovh_adpc_highperformance_disk.sh
 ```
 
 ### Step 3:
 - Run the script
+#### Classic Disk
 ```Bash
-sudo bash ovh_adpc.sh
+sudo bash ovh_adpc_classic_disk.sh
+```
+
+#### High Performance Disk
+```Bash
+sudo bash ovh_adpc_highperformance_disk.sh
 ```
 
 
